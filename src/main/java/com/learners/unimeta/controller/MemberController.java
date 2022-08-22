@@ -61,7 +61,23 @@ public class MemberController extends DefaultRestController{
         } catch (Exception e) {
             return failResponse(e);
         }
+    }
 
+    @PostMapping("/all_point")
+    public DeferredResult<ResponseEntity<?>> getAllPoints() {
+        try {
+            return successResponse(avatarPointService.getAllPoint());
+        } catch (Exception e) {
+            return failResponse(e);
+        }
+    }
+    @PostMapping("/all_users")
+    public DeferredResult<ResponseEntity<?>> getAllUsers() {
+        try {
+            return successResponse(avatarPointService.getAllPoint());
+        } catch (Exception e) {
+            return failResponse(e);
+        }
     }
 
 }

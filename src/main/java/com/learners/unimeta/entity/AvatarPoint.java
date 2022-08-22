@@ -1,5 +1,6 @@
 package com.learners.unimeta.entity;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,7 +15,10 @@ import java.io.Serializable;
 public class AvatarPoint implements Serializable {
 
     @Id
-    private String id;
-    private String point;
+    private int seq;
+    private Float x;
+    private Float y;
+    private Float Z;
+    private int state;
 
 }

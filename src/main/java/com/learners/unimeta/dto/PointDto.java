@@ -7,10 +7,16 @@ import org.springframework.beans.BeanUtils;
 
 @Data
 public class PointDto {
-    @Schema(example = "test")
-    private String id;
-    @Schema(example = "3,6,2")
-    private String point;
+    @Schema(example = "1")
+    private int seq;
+    @Schema(example = "366")
+    private Float x;
+    @Schema(example = "1266")
+    private Float y;
+    @Schema(example = "-363")
+    private Float z;
+    @Schema(example = "1")
+    private int state;
 
     public AvatarPoint convertToEntity(){
         AvatarPoint avatarPoint = new AvatarPoint();
